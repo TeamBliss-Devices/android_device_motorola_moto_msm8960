@@ -162,8 +162,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-scan=true \
     mmp.enable.3g2=true \
     media.aac_51_output_enabled=true \
-    ro.mot.vr_source_dsp=1 \
-    qcom.hw.aac.encoder=false
+    ro.mot.vr_source_dsp=1
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
