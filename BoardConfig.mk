@@ -58,6 +58,7 @@ BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --dt $(LOCAL_PATH)/dt.img
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 12884901888
+TARGET_GCC_VERSION_ARM := 4.10-linaro
 
 WLAN_MODULES:
 	mkdir -p $(KERNEL_MODULES_OUT)/prima
@@ -135,3 +136,6 @@ BOARD_SEPOLICY_UNION += \
     thermal-engine.te \
     ueventd.te \
     whisperd.te
+
+# BlissPop Configs
+BLISSIFY := true
